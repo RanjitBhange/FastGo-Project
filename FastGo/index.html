@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="FastGo — safe, reliable rides around your city. Go anywhere, faster.">
+  <title>FastGo — Go anywhere, faster.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg sticky-top site-nav">
+    <div class="container">
+      <a class="navbar-brand brand" href="index.html" aria-label="FastGo home"><span class="brand-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 1 4 13h6l-.5 10L20 9h-6.5z"/></svg></span>Fast<span>Go</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="booking.html">Ride</a></li>
+          <li class="nav-item"><a class="nav-link" href="driver.html">Drive</a></li>
+          <li class="nav-item"><a class="nav-link" href="#safety">Safety</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">Help</a></li>
+        </ul>
+        <div class="nav-actions d-flex align-items-center gap-2">
+          <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode"><i class="bi bi-moon-stars"></i></button>
+          <a class="btn btn-quiet" href="login.html">Log in</a>
+          <a class="btn btn-primary rounded-pill px-4" href="login.html#signup">Sign up <i class="bi bi-arrow-up-right ms-1"></i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero-section">
+      <div class="hero-orb hero-orb-one"></div><div class="hero-orb hero-orb-two"></div>
+      <div class="container position-relative">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-6 reveal">
+            <div class="eyebrow"><span class="eyebrow-dot"></span> YOUR CITY. YOUR RIDE.</div>
+            <h1 class="hero-title">Your next ride,<br><span>just a tap away.</span></h1>
+            <p class="hero-copy">From quick city hops to comfortable long rides, get there on your terms with FastGo.</p>
+            <div class="hero-trust"><div class="avatar-stack"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&auto=format&fit=crop" alt=""><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&auto=format&fit=crop" alt=""><img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=80&auto=format&fit=crop" alt=""></div><div><strong>4.9/5 rider rating</strong><small>Loved by everyday commuters</small></div></div>
+          </div>
+          <div class="col-lg-6 reveal">
+            <div class="booking-card">
+              <div class="d-flex justify-content-between align-items-center mb-4"><div><p class="small-label mb-1">LET'S GET MOVING</p><h2 class="h4 mb-0">Where to?</h2></div><span class="booking-icon"><i class="bi bi-send-fill"></i></span></div>
+              <div class="ride-mode mb-4" role="group" aria-label="Ride timing"><button class="mode-btn active" type="button" data-mode="now"><i class="bi bi-lightning-charge-fill me-2"></i>Ride now</button><button class="mode-btn" type="button" data-mode="schedule"><i class="bi bi-calendar2-week me-2"></i>Schedule</button></div>
+              <form id="homeBookingForm" novalidate>
+                <div class="location-fields">
+                  <label class="visually-hidden" for="homePickup">Pickup location</label><div class="location-field"><span class="location-dot pickup-dot"></span><input id="homePickup" name="pickup" class="form-control" placeholder="Enter pickup location" required autocomplete="off"></div>
+                  <div class="location-connector"></div>
+                  <label class="visually-hidden" for="homeDrop">Drop location</label><div class="location-field"><span class="location-dot drop-dot"></span><input id="homeDrop" name="drop" class="form-control" placeholder="Where are you going?" required autocomplete="off"></div>
+                </div>
+                <div class="schedule-field d-none mt-3"><label class="form-label small-label" for="rideDate">PICKUP DATE & TIME</label><input type="datetime-local" class="form-control" id="rideDate"></div>
+                <button class="btn btn-primary w-100 btn-lg mt-4" type="submit">See prices <i class="bi bi-arrow-right ms-2"></i></button>
+                <p class="form-note mt-3 mb-0"><i class="bi bi-shield-check me-1"></i> Upfront fares. No surprises.</p>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="hero-bottom"><span><i class="bi bi-check-circle-fill"></i> Verified drivers</span><span><i class="bi bi-check-circle-fill"></i> Live ride tracking</span><span><i class="bi bi-check-circle-fill"></i> Fair, upfront fares</span></div>
+      </div>
+    </section>
+
+    <section class="section-pad" id="rides">
+      <div class="container">
+        <div class="section-heading text-center reveal"><span class="eyebrow">THE RIGHT RIDE FOR YOU</span><h2>Pick your kind of <span>go.</span></h2><p>Whatever the day looks like, there's a FastGo for it.</p></div>
+        <div class="row g-3 g-lg-4 mt-4">
+          <div class="col-6 col-lg"><article class="ride-type-card reveal"><div class="ride-emoji bike"><i class="bi bi-bicycle"></i></div><h3>Bike</h3><p>Beat the traffic</p><div class="ride-meta"><span><i class="bi bi-people"></i> 1 seat</span><b>3 min</b></div></article></div>
+          <div class="col-6 col-lg"><article class="ride-type-card reveal"><div class="ride-emoji auto"><i class="bi bi-taxi-front"></i></div><h3>Auto</h3><p>Easy city rides</p><div class="ride-meta"><span><i class="bi bi-people"></i> 3 seats</span><b>4 min</b></div></article></div>
+          <div class="col-6 col-lg"><article class="ride-type-card reveal"><div class="ride-emoji mini"><i class="bi bi-car-front-fill"></i></div><h3>Mini</h3><p>Everyday comfort</p><div class="ride-meta"><span><i class="bi bi-people"></i> 4 seats</span><b>5 min</b></div></article></div>
+          <div class="col-6 col-lg"><article class="ride-type-card reveal"><div class="ride-emoji sedan"><i class="bi bi-car-front"></i></div><h3>Sedan</h3><p>Room to relax</p><div class="ride-meta"><span><i class="bi bi-people"></i> 4 seats</span><b>6 min</b></div></article></div>
+          <div class="col-6 col-lg"><article class="ride-type-card reveal"><div class="ride-emoji premium"><i class="bi bi-stars"></i></div><h3>Premium</h3><p>Travel in style</p><div class="ride-meta"><span><i class="bi bi-people"></i> 4 seats</span><b>8 min</b></div></article></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad soft-section">
+      <div class="container">
+        <div class="row align-items-end mb-5"><div class="col-lg-7 reveal"><span class="eyebrow">THREE STEPS. ZERO STRESS.</span><h2 class="section-title">Your ride is sorted<br>in <span>seconds.</span></h2></div><div class="col-lg-5 reveal"><p class="section-intro mb-0">A smoother journey starts before you leave the door. Booking with FastGo is refreshingly simple.</p></div></div>
+        <div class="row g-4">
+          <div class="col-md-4"><div class="step-card reveal"><span class="step-number">01</span><div class="step-icon"><i class="bi bi-geo-alt"></i></div><h3>Set your route</h3><p>Choose your pickup and destination. We'll show your fare upfront.</p></div></div>
+          <div class="col-md-4"><div class="step-card reveal"><span class="step-number">02</span><div class="step-icon"><i class="bi bi-car-front"></i></div><h3>Meet your driver</h3><p>Get driver details, vehicle information and an estimated arrival time.</p></div></div>
+          <div class="col-md-4"><div class="step-card reveal"><span class="step-number">03</span><div class="step-icon"><i class="bi bi-emoji-smile"></i></div><h3>Enjoy the ride</h3><p>Relax and get where you're going. Your journey is in good hands.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad" id="safety">
+      <div class="container">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-5 reveal"><span class="eyebrow">PEACE OF MIND, BUILT IN</span><h2 class="section-title">Good rides start<br>with <span>feeling safe.</span></h2><p class="section-intro">We put your comfort first, from the moment you book until you reach your destination.</p><a href="booking.html" class="btn btn-dark rounded-pill px-4 py-3 mt-2">Book a safer ride <i class="bi bi-arrow-up-right ms-2"></i></a></div>
+          <div class="col-lg-7"><div class="feature-grid">
+            <article class="feature-card reveal"><div class="feature-icon mint"><i class="bi bi-patch-check"></i></div><h3>Verified drivers</h3><p>Driver identity and vehicle details, right in the app.</p></article>
+            <article class="feature-card reveal"><div class="feature-icon orange"><i class="bi bi-headset"></i></div><h3>24/7 support</h3><p>Real help is always within reach when you need it.</p></article>
+            <article class="feature-card reveal"><div class="feature-icon purple"><i class="bi bi-receipt"></i></div><h3>Transparent pricing</h3><p>See an estimate before you confirm your ride.</p></article>
+            <article class="feature-card reveal"><div class="feature-icon blue"><i class="bi bi-geo"></i></div><h3>Trip details</h3><p>Know your route, ETA and driver before pickup.</p></article>
+          </div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-section section-pad-sm"><div class="container"><div class="row text-center g-4">
+      <div class="col-4"><div class="stat-number" data-count="12" data-suffix="M+">0</div><div class="stat-label">rides completed</div></div>
+      <div class="col-4"><div class="stat-number" data-count="45" data-suffix="+">0</div><div class="stat-label">cities covered</div></div>
+      <div class="col-4"><div class="stat-number" data-count="80" data-suffix="K+">0</div><div class="stat-label">driver partners</div></div>
+    </div><p class="stats-disclaimer">Illustrative demo statistics</p></div></section>
+
+    <section class="section-pad soft-section">
+      <div class="container">
+        <div class="section-heading text-center reveal"><span class="eyebrow">KIND WORDS, REAL JOURNEYS</span><h2>People are going <span>places.</span></h2><p>Here's what riders have to say about the FastGo feeling.</p></div>
+        <div id="testimonialCarousel" class="carousel slide testimonial-carousel mt-5 reveal" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active"><div class="testimonial-card"><div class="quote-mark">“</div><div class="stars">★★★★★</div><blockquote>“Booking is so easy, and I always know what I'll pay. My go-to for getting across town.”</blockquote><div class="testimonial-person"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop" alt="Portrait of Aditi"><div><strong>Aditi K.</strong><small>Daily commuter</small></div></div></div></div>
+            <div class="carousel-item"><div class="testimonial-card"><div class="quote-mark">“</div><div class="stars">★★★★★</div><blockquote>“The driver details and OTP make me feel comfortable travelling on my own. Love the peace of mind.”</blockquote><div class="testimonial-person"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&auto=format&fit=crop" alt="Portrait of Karan"><div><strong>Karan M.</strong><small>Frequent rider</small></div></div></div></div>
+            <div class="carousel-item"><div class="testimonial-card"><div class="quote-mark">“</div><div class="stars">★★★★★</div><blockquote>“Fast, friendly and reliable. The Mini is perfect when I have a busy day and a lot to do.”</blockquote><div class="testimonial-person"><img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&auto=format&fit=crop" alt="Portrait of Dev"><div><strong>Dev P.</strong><small>Small business owner</small></div></div></div></div>
+          </div>
+          <div class="carousel-controls"><button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev" aria-label="Previous testimonial"><i class="bi bi-arrow-left"></i></button><button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next" aria-label="Next testimonial"><i class="bi bi-arrow-right"></i></button></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad"><div class="container"><div class="driver-banner reveal"><div class="driver-banner-content"><span class="eyebrow">YOUR TIME. YOUR TERMS.</span><h2>Take the wheel.<br>Make it <span>count.</span></h2><p>Earn on a schedule that works for you. Join a community moving cities forward.</p><a class="btn btn-light rounded-pill px-4 py-3" href="driver.html">Drive with FastGo <i class="bi bi-arrow-up-right ms-2"></i></a></div><div class="driver-banner-art"><div class="art-sun"></div><div class="art-road"></div><div class="art-car"><i class="bi bi-car-front-fill"></i></div><div class="art-pin"><i class="bi bi-geo-alt-fill"></i></div></div></div></div></section>
+
+    <section class="section-pad-sm app-section"><div class="container"><div class="row align-items-center gy-4"><div class="col-lg-7 reveal"><span class="eyebrow">FASTGO IN YOUR POCKET</span><h2 class="section-title">Your city,<br><span>one tap away.</span></h2><p class="section-intro">Book a ride, track your driver and keep your trip details handy. All in one place.</p><div class="d-flex flex-wrap gap-3 mt-4"><a class="store-button" href="#" data-demo-link><i class="bi bi-apple"></i><span><small>Coming soon on</small><strong>App Store</strong></span></a><a class="store-button" href="#" data-demo-link><i class="bi bi-google-play"></i><span><small>Coming soon on</small><strong>Google Play</strong></span></a></div></div><div class="col-lg-5 text-center reveal"><div class="phone-mockup"><div class="phone-notch"></div><div class="phone-screen"><div class="phone-top"><span>9:41</span><i class="bi bi-wifi"></i></div><div class="mini-brand">⚡ FastGo</div><h4>Where to?</h4><div class="mini-location"><i class="bi bi-circle"></i> Home</div><div class="mini-location"><i class="bi bi-geo-alt-fill"></i> Work</div><div class="mini-map"><span class="mini-map-route"></span><i class="bi bi-geo-alt-fill"></i></div><div class="mini-car-row"><i class="bi bi-car-front-fill"></i><span><b>FastGo Mini</b><small>4 min away</small></span><strong>₹149</strong></div><div class="mini-confirm">Confirm ride</div></div></div></div></div></section>
+
+    <section class="section-pad soft-section" id="faq"><div class="container"><div class="row g-5"><div class="col-lg-4 reveal"><span class="eyebrow">GOT QUESTIONS?</span><h2 class="section-title">We've got<br><span>answers.</span></h2><p class="section-intro">Need a hand? Here are a few things riders often ask.</p><a href="login.html" class="text-link">Contact support <i class="bi bi-arrow-up-right"></i></a></div><div class="col-lg-8 reveal"><div class="accordion faq-accordion" id="faqAccordion">
+      <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">How do I book a FastGo ride?</button></h3><div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion"><div class="accordion-body">Enter your pickup and drop locations, choose a ride type, review the fare estimate and confirm. This demo simulates the booking flow locally.</div></div></div>
+      <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">Can I schedule a ride in advance?</button></h3><div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Yes. Select “Schedule” in the booking card and choose a future date and time before checking prices.</div></div></div>
+      <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">How are fares calculated?</button></h3><div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Demo fares combine a base fare, distance rate and time rate. The booking page lets you toggle a simulated surge multiplier.</div></div></div>
+      <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">How can I become a driver?</button></h3><div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Visit the Become a Driver page and submit the sample registration form. No information is sent to a server.</div></div></div>
+    </div></div></div></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container"><div class="row gy-4"><div class="col-lg-4"><a class="navbar-brand brand brand-footer" href="index.html"><span class="brand-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 1 4 13h6l-.5 10L20 9h-6.5z"/></svg></span>Fast<span>Go</span></a><p class="footer-tagline">Go anywhere, faster.</p><p class="footer-description">Thoughtful rides for everyday life. Built around people, not just places.</p></div><div class="col-6 col-lg-2"><h3>Explore</h3><a href="booking.html">Book a ride</a><a href="driver.html">Drive with us</a><a href="#safety">Safety</a></div><div class="col-6 col-lg-2"><h3>Account</h3><a href="login.html">Log in / Sign up</a><a href="history.html">Ride history</a><a href="#faq">Help centre</a></div><div class="col-lg-4"><h3>Stay in the loop</h3><p class="footer-description">Product updates, city stories and ways to move smarter.</p><form id="newsletterForm" class="newsletter-form"><label for="newsletterEmail" class="visually-hidden">Email address</label><input id="newsletterEmail" type="email" placeholder="Your email address" required><button type="submit" aria-label="Subscribe"><i class="bi bi-arrow-right"></i></button></form></div></div><div class="footer-bottom"><span>© <span data-year></span> FastGo Mobility. Demo project.</span><div><a href="#" data-demo-link>Privacy</a><a href="#" data-demo-link>Terms</a><a href="#" data-demo-link>Instagram</a></div></div></div></footer>
+  <div class="toast-container position-fixed bottom-0 end-0 p-3"><div id="appToast" class="toast border-0" role="status" aria-live="polite" aria-atomic="true"><div class="d-flex"><div class="toast-body" id="toastMessage">Done.</div><button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button></div></div></div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

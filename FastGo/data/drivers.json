@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "name": "Aarav Patil",
+    "rating": "4.9",
+    "trips": 1842,
+    "vehicle": "Honda Amaze \u00b7 White",
+    "plate": "MH 13 AB 4821",
+    "otp": "6248",
+    "eta": 4,
+    "photo": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=180&h=180&fit=crop&crop=faces&auto=format"
+  },
+  {
+    "id": 2,
+    "name": "Neha Deshmukh",
+    "rating": "5.0",
+    "trips": 936,
+    "vehicle": "Maruti Swift \u00b7 Silver",
+    "plate": "MH 13 CD 7314",
+    "otp": "3517",
+    "eta": 3,
+    "photo": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=180&h=180&fit=crop&crop=faces&auto=format"
+  },
+  {
+    "id": 3,
+    "name": "Rohan Jadhav",
+    "rating": "4.8",
+    "trips": 2154,
+    "vehicle": "Hyundai i20 \u00b7 Blue",
+    "plate": "MH 13 EF 9052",
+    "otp": "8093",
+    "eta": 6,
+    "photo": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=180&h=180&fit=crop&crop=faces&auto=format"
+  },
+  {
+    "id": 4,
+    "name": "Sameer Shaikh",
+    "rating": "4.9",
+    "trips": 1270,
+    "vehicle": "Tata Tiago \u00b7 Grey",
+    "plate": "MH 13 GH 1684",
+    "otp": "4721",
+    "eta": 5,
+    "photo": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=180&h=180&fit=crop&crop=faces&auto=format"
+  }
+]
